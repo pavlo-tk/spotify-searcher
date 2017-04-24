@@ -16,7 +16,7 @@ class GuzzleAdapter implements HttpClientInterface
     {
         $response = $this->client->request(
             'GET',
-            'https://api.spotify.com/v1/search',
+            $uri,
             ['query' => $queryParameters]
         );
         $data = \GuzzleHttp\json_decode($response->getBody(), true);
