@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="favicon.ico">
+    <title>Search artists on Spotify</title>
+
+    <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Search artists on Spotify</h1>
+            <form id="searchForm" action="">
+                <div class="input-group">
+                    <input id="searchInput" type="text" class="form-control" placeholder="Artist name">
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary" data-text-loading="Searching...">Search</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="artists text-muted">
+        <div class="container">
+            <div id="error" class="alert alert-danger" role="alert"></div>
+            <div id="results" class="row"></div>
+
+            <div id="genres"></div>
+        </div>
+    </div>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Made by Pavlo Tkachov</p>
+        </div>
+    </footer>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <script src="resources/jquery-3.1.1.min.js"></script>
+    <!--
+        Teather.io is mandatory denepency in Bootstrap 4, so I included it just to avoid error in the console.
+        It's possible to build custom version of Bootstrap without it.
+    -->
+    <script src="vendor/twbs/bootstrap/docs/assets/js/vendor/tether.min.js"></script>
+    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="resources/spotify-artist-searcher.js"></script>
+    <script src="resources/button.js"></script>
+    <script src="resources/script.js"></script>
+</body>
+</html>

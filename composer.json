@@ -1,0 +1,21 @@
+{
+    "name": "spotify-searcher",
+    "description": "Single page application to search for artists on Spotify.com",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Pavlo Tkachov",
+            "email": "brabus.adm@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SpotifyArtistSearch\\": "src/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "6.2.3",
+        "twbs/bootstrap": "4.0.0-alpha.6"
+    }
+}
