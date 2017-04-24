@@ -1,7 +1,7 @@
 # How to run
 1. Download the project in any directory
 2. Go to that directory: `cd /path/to/project`
-3. Run PHP: `php -S localhost:8000`
+3. Run PHP: `php -S localhost:8000`. It uses PHP 7.
 4. Open the app: http://localhost:8000/index.html
 
 # Description
